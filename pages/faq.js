@@ -1,5 +1,13 @@
 import Link from "../src/components/Link";
 
+// SSG: Static Site Generation
+// SSR: Server Side Rendering
+// ISG: Incremental Static Generation
+
+// getStaticProps: executa somente uma vez em tempo de BUILD
+// getServerSideProps: executa e faz pré-render a cada acesso na página
+// em DEV: ambos são executados a cada acesso na página
+
 export async function getStaticProps() {
   const FAQ_API_URL =
     "https://gist.githubusercontent.com/emiscode/a0df2afa313f01b70ce42c80cb76661a/raw/5acde9dc74e80483366f31a7c19b6bc1b5c595ac/jobsProjectData.json";
