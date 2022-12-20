@@ -3,8 +3,8 @@ import Link from "../../components/Link";
 import { theme } from "../../theme/theme";
 import { Image, Box, Text, Icon, Input, Button } from "../../theme/components";
 
-const LOGO_JOBS_PROJECT_URL = "http://via.placeholder.com/94x44";
-const SIDE_IMAGE_URL = "http://via.placeholder.com/2878x1640";
+const LOGO_JOBS_PROJECT_URL = "/images/jobs-project-logo.png";
+const SIDE_IMAGE_URL = "/images/recrutamento.jpg";
 
 function SideImage() {
   return (
@@ -147,7 +147,7 @@ export default function HomeScreen() {
                 <Image
                   styleSheet={{
                     width: "auto",
-                    height: theme.space.x11,
+                    height: theme.space.x32,
                   }}
                   src={LOGO_JOBS_PROJECT_URL}
                   alt="Logo Jobs Project"
