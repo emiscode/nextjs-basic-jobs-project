@@ -1,5 +1,5 @@
-import Head from "next/head";
 import Link from "../src/components/Link";
+import PageTitle from "../src/components/PageTitle";
 
 // SSG: Static Site Generation
 // SSR: Server Side Rendering
@@ -34,9 +34,7 @@ export async function getStaticProps() {
 export default function FAQPage(props) {
   return (
     <div>
-      <Head>
-        <title>FAQ - Jobs Project</title>
-      </Head>
+      <PageTitle title="FAQ - Jobs Project" />
       <h1>Jobs Project - FAQ</h1>
       <Link href={"/"}>Home</Link>
       <ul>

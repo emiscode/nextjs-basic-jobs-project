@@ -1,8 +1,8 @@
-import Head from "next/head";
 import Footer from "../../components/Footer";
 import Link from "../../components/Link";
 import { theme } from "../../theme/theme";
 import { Image, Box, Text, Icon, Input, Button } from "../../theme/components";
+import PageTitle from "../../components/PageTitle";
 
 const LOGO_JOBS_PROJECT_URL = "/images/jobs-project-logo.png";
 const SIDE_IMAGE_URL = "/images/recrutamento.jpg";
@@ -97,9 +97,7 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
-      <Head>
-        <title>Home - Jobs Project</title>
-      </Head>
+      <PageTitle title="Home - Jobs Project" />
       <Box
         as="main"
         styleSheet={{
