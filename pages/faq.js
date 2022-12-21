@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "../src/components/Link";
 
 // SSG: Static Site Generation
@@ -33,6 +34,9 @@ export async function getStaticProps() {
 export default function FAQPage(props) {
   return (
     <div>
+      <Head>
+        <title>FAQ - Jobs Project</title>
+      </Head>
       <h1>Jobs Project - FAQ</h1>
       <Link href={"/"}>Home</Link>
       <ul>
