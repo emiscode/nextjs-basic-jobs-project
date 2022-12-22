@@ -206,14 +206,7 @@ export default function HomeScreen() {
                         alignItems: "center",
                       }}
                     >
-                      <Text>Confira as principais dúvidas</Text>
-                      <Icon
-                        styleSheet={{
-                          iconVariant: "chevronRight",
-                          marginLeft: theme.space.xpx,
-                        }}
-                        aria-hidden="true"
-                      />
+                      <Text>Confira as principais dúvidas ➡️</Text>
                     </Text>
                   </Link>
                 </Box>

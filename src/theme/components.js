@@ -174,7 +174,7 @@ export function Icon({ as, styleSheet, ...props }) {
     <Box
       as={FontAwesomeIcon}
       icon={iconSet[`fa${capitalize(iconVariant)}`]}
-      crossOrigin="anonymous"
+      crossOrigin="true"
       styleSheet={{
         width: "1.5ch",
         height: "1.5ch",
