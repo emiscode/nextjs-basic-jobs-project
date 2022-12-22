@@ -1,5 +1,6 @@
-import Link from "../src/components/Link";
-import PageTitle from "../src/components/PageTitle";
+import FAQScreen from "../src/screens/FAQScreen";
+
+export default FAQScreen;
 
 // SSG: Static Site Generation
 // SSR: Server Side Rendering
@@ -31,22 +32,22 @@ export async function getStaticProps() {
   };
 }
 
-export default function FAQPage(props) {
-  return (
-    <div>
-      <PageTitle title="FAQ - Jobs Project" />
-      <h1>Jobs Project - FAQ</h1>
-      <Link href={"/"}>Home</Link>
-      <ul>
-        {props.faq.map((item) => (
-          <li key={item.id}>
-            <article>
-              <h2>{item.question}</h2>
-              <p>{item.answer}</p>
-            </article>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+// export default function FAQPage(props) {
+//   return (
+//     <div>
+//       <PageTitle title="FAQ - Jobs Project" />
+//       <h1>Jobs Project - FAQ</h1>
+//       <Link href={"/"}>Home</Link>
+//       <ul>
+//         {props.faq.map((item) => (
+//           <li key={item.id}>
+//             <article>
+//               <h2>{item.question}</h2>
+//               <p>{item.answer}</p>
+//             </article>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }

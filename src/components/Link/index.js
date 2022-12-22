@@ -3,7 +3,7 @@ import NextLink from "next/link";
 
 const StyledLink = React.forwardRef(({ onClick, href, children }, ref) => {
   return (
-    <span href={href} onClick={onClick} ref={ref} style={{ color: "green" }}>
+    <span href={href} onClick={onClick} ref={ref} style={{ color: "#653CAD" }}>
       {children}
     </span>
   );
